@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.banner-home {
+    background: url(/src/img/banner.jpg) center;
+    background-size: cover;
+    height: 450px;
+}
