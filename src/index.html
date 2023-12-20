@@ -103,66 +103,119 @@
 
         <!-- main -->
         <main>
-            <section>
-                <div class="container mx-auto px-4 py-10">
-                    <div class="flex w-full items-center">
-                        <div class="w-1/2 h-full">
-                            <h3 class="text-sm text-gray-400 font-medium">
-                                RESORT EM DESTAQUE
-                            </h3>
-                            <h2 class="text-2xl">
-                                Ecoresort Praia do Forte Bahia
-                            </h2>
-                            <h3 class="text-sm text-gray-400 font-medium mt-2">
-                                Hotel qualidade 5 estrelas
-                            </h3>
-                            <div class="text-sm mt-4 space-y-4">
-                                <p>
-                                    Lorem ipsum dolor, sit amet consectetur
-                                    adipisicing elit. Deleniti voluptas totam
-                                    sunt illo aliquam ratione dolor excepturi
-                                    sint. Eius, quos! Aliquam doloremque
-                                    perspiciatis esse iste consectetur eaque
-                                    maiores assumenda nemo.
-                                </p>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Deserunt assumenda hic
-                                    necessitatibus laboriosam ratione omnis sit
-                                    quisquam ipsum voluptatibus mollitia
-                                    sapiente quam quod vero, natus fugit numquam
-                                    eaque. Dolor, delectus?
-                                </p>
-                                <button
-                                    class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"
+            <!-- resort em destaque -->
+            <section class="container mx-auto px-4 py-10">
+                <div class="flex w-full items-center">
+                    <div class="w-1/2 h-full">
+                        <h3 class="text-sm text-gray-400 font-medium">
+                            RESORT EM DESTAQUE
+                        </h3>
+                        <h2 class="text-2xl">Ecoresort Praia do Forte Bahia</h2>
+                        <h3 class="text-sm text-gray-400 font-medium mt-2">
+                            Hotel qualidade 5 estrelas
+                        </h3>
+                        <div class="text-sm mt-4 space-y-4">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Deleniti voluptas totam sunt
+                                illo aliquam ratione dolor excepturi sint. Eius,
+                                quos! Aliquam doloremque perspiciatis esse iste
+                                consectetur eaque maiores assumenda nemo.
+                            </p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Deserunt assumenda hic
+                                necessitatibus laboriosam ratione omnis sit
+                                quisquam ipsum voluptatibus mollitia sapiente
+                                quam quod vero, natus fugit numquam eaque.
+                                Dolor, delectus?
+                            </p>
+                            <button
+                                class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"
+                            >
+                                Solicitar reserva
+                                <svg
+                                    class="w-4 ml-2"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true"
                                 >
-                                    Solicitar reserva
-                                    <svg
-                                        class="w-4 ml-2"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="1.5"
-                                        viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                                        ></path>
-                                    </svg>
-                                </button>
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                    ></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-5/12 ml-auto">
+                        <figure>
+                            <img src="/src/img/resort-praia-forte.jpg" />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- /resort em destaque -->
+
+            <!-- grid resorts -->
+            <section class="container mx-auto px-4">
+                <div>
+                    <h3 class="text-2xl text-center font-medium">
+                        Conheça mais resorts
+                    </h3>
+                    <div class="grid grid-cols-4 grid-rows-2 gap-4 mt-8 h-96">
+                        <div class="col-span-2 row-span-2 relative">
+                            <img
+                                src="./img/hotel1.png"
+                                class="w-full h-full object-cover rounded-lg overflow-hidden"
+                            />
+                            <div
+                                class="text-white bg-blue-700 absolute bottom-0 left-0 w-full h-10 rounded-b-lg text-justify pt-2 pl-4 bg-opacity-75"
+                            >
+                                Beach Park Resort
                             </div>
                         </div>
-                        <div class="w-5/12 ml-auto">
-                            <figure>
-                                <img src="/src/img/resort-praia-forte.jpg" />
-                            </figure>
+                        <div class="col-span-2 relative">
+                            <img
+                                src="./img/hotel2.png"
+                                class="w-full h-full object-cover rounded-lg overflow-hidden"
+                            />
+                            <div
+                                class="text-white bg-blue-700 absolute bottom-0 left-0 w-full h-10 rounded-b-lg text-justify pt-2 pl-4 bg-opacity-75"
+                            >
+                                Salinas do Maragogi Resort
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                src="./img/hotel3.png"
+                                class="w-full h-full object-cover rounded-lg overflow-hidden"
+                            />
+                            <div
+                                class="text-white bg-blue-700 absolute bottom-0 left-0 w-full h-10 rounded-b-lg text-justify pt-2 pl-4 bg-opacity-75"
+                            >
+                                Grand Palladium
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                src="./img/hotel4.png"
+                                class="w-full h-full object-cover rounded-lg overflow-hidden"
+                            />
+                            <div
+                                class="text-white bg-blue-700 absolute bottom-0 left-0 w-full h-10 rounded-b-lg text-justify pt-2 pl-4 bg-opacity-75"
+                            >
+                                Arraial do Cabo Resort
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- /grid resorts -->
         </main>
         <!-- /main -->
     </body>
