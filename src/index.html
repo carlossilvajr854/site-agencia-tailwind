@@ -8,11 +8,10 @@
     </head>
     <body class="bg-gray-50 text-gray-600">
         <header
-            class="container mx-auto px-4 h-24 flex items-center justify-between"
+            class="container max-w-5xl mx-auto px-4 h-24 flex items-center justify-between"
         >
-            <section>
-                <a href="#" class="font-black">LOGO</a>
-            </section>
+            <a href="#" class="font-black">LOGO</a>
+
             <nav>
                 <ul class="flex space-x-4">
                     <li>
@@ -50,7 +49,7 @@
         <!-- banner -->
         <section class="banner-home">
             <div
-                class="container h-full mx-auto px-4 flex items-center justify-center"
+                class="container max-w-5xl h-full mx-auto px-4 flex items-center justify-center"
             >
                 <div>
                     <div class="text-center">
@@ -104,7 +103,7 @@
         <!-- main -->
         <main>
             <!-- resort em destaque -->
-            <section class="container mx-auto px-4 py-10">
+            <section class="container max-w-5xl mx-auto px-4 py-8">
                 <div class="flex w-full items-center">
                     <div class="w-1/2 h-full">
                         <h3 class="text-sm text-gray-400 font-medium">
@@ -153,16 +152,17 @@
                         </div>
                     </div>
                     <div class="w-5/12 ml-auto">
-                        <figure>
-                            <img src="/src/img/resort-praia-forte.jpg" />
-                        </figure>
+                        <img
+                            src="/src/img/resort-praia-forte.jpg"
+                            class="rounded-lg"
+                        />
                     </div>
                 </div>
             </section>
             <!-- /resort em destaque -->
 
             <!-- grid resorts -->
-            <section class="container mx-auto px-4">
+            <section class="container max-w-5xl mx-auto px-4 py-16">
                 <div>
                     <h3 class="text-2xl text-center font-medium">
                         Conheça mais resorts
@@ -216,7 +216,83 @@
                 </div>
             </section>
             <!-- /grid resorts -->
+
+            <!-- form search -->
+            <section
+                class="container max-w-5xl mx-auto px-4 py-14 flex justify-center"
+            >
+                <form class="space-x-1">
+                    <select
+                        class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500"
+                    >
+                        <option value="">Escolha o Estado</option>
+                    </select>
+                    <select
+                        class="bg-gray-50 px-3 py-2 border border-gray-300 rounded text-gray-500"
+                    >
+                        <option value="">Escolha a Cidade</option>
+                    </select>
+                    <button
+                        class="inline-flex items-center text-yellow-900 bg-yellow-500 font-medium px-3 py-2 rounded"
+                    >
+                        <svg
+                            class="w-4 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.0"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                            ></path>
+                        </svg>
+                        Pesquisar resorts
+                    </button>
+                </form>
+            </section>
+            <!-- /form search -->
         </main>
         <!-- /main -->
+        <footer class="border-t border-gray-200">
+            <div
+                class="container max-w-5xl mx-auto px-4 py-8 flex items-center justify-between"
+            >
+                <a href="#" class="font-black text-gray-400">LOGO</a>
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <svg
+                            class="h-8 text-gray-400 hover:text-gray-600"
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 50 50"
+                        >
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg
+                            class="h-8 text-gray-400 hover:text-gray-600"
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 50 50"
+                        >
+                            <path
+                                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
